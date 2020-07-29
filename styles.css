@@ -1,216 +1,66 @@
-/************ Base Stykes ***********/
-* {
+*{
 	box-sizing: border-box;
 }
-
-div {
-	background-color: #c2c2d6;
-
+body{
+	background-color:; 
+	font-family:"Arial";
+	margin: 1%;
 }
-
-h1 {
-	margin-top: 15px;
-	margin-bottom: 15px;
+h1{
 	text-align: center;
-	font-family: Arial;
-	font-weight: bold;
+	color: red;
+	font-size: 40px;
 }
-
-p{
-	border: 1px solid black;
-	background-color: #c2c2d6;
-	width: 90%;
-	height: 150px;
-	margin-right: auto;
-	margin-left: auto;
-	font-family: Helvetica;
+.infos{
+	font-size: 20px;
+	padding: 12px;
+	margin: 0;
+	clear: right; 
 }
-
-#p1 {
-	border: 1px solid black;
-	background-color: #ff9999;
-	font-family: Arial;
-	text-align: center;
-	font-weight: bold;
-	margin-top: 0px;
-	padding: 10px;
-	float: right;
-	width: 100px;
-	height: auto;
-}
-#p2 {
-	border: 1px solid black;
-	background-color: #b30000;
-	font-family: Arial;
+.food{
 	color: white;
-	text-align: center;
-	font-weight: bold;
-	margin-top: 0px;
-	padding: 10px;
-	float: right;
-	width: 100px;
-	height: auto;
-}
-#p3 {
 	border: 1px solid black;
-	background-color: #ffdd99;
-	font-family: Arial;
-	text-align: center;
-	font-weight: bold;
-	margin-top: 0px;
-	padding: 10px;
+	font-size: 25px;
+	border-top: 0;
+	border-right: 0;
+	width: 200px;
 	float: right;
-	width: 100px;
-	height: auto;
+	margin: 0;
+	text-align: center;
+}
+.box{
+	background-color: lavender;
+	float: left;
+	margin: 1%;
+	width: 31.3333%;
+	border: 1px solid black;
+}
+#chicken > h2{
+	background-color: red;
+}
+#beef > h2{
+	background-color: green;
+}
+#sushi > h2{
+	background-color: blue;
 }
 
+@media screen and (max-width:767px ) {
 
-section {
-	clear:both;
-	padding: 10px;
-}
-
-/* Simple Responsive Framework. */
-.row {
-	width: 100%;
-}
-/********** Dektsop devices only *********/
-@media (min-width: 992px) {
-	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-1g-11, .col-lg-12 {
-		float: left;
-		border: 1px solid gray;
-		margin-left: 10px;
-		margin-right: 5px;
-		margin-bottom: 15px;
-	}
-	.col-lg-1 {
-		width: 8.33%;
-	}
-	.col-lg-2 {
-		width: 8.33%;
-	}
-	.col-lg-3 {
-		width: 25%;
-	}
-	.col-lg-4 {
-		width: 33%;
-	}
-	.col-lg-5 {
-		width: 41.66%;
-	}
-	.col-lg-6 {
-		width: 50%;
-	}
-	.col-lg-7 {
-		width: 58.33%;
-	}
-	.col-lg-8 {
-		width: 66.66%;
-	}
-	.col-lg-9 {
-		width: 74.99%;
-	}
-	.col-lg-10 {
-		width: 83.33%;
-	}
-	.col-lg-11 {
-		width: 91.66%;
-	}
-	.col-lg-12 {
-		width: 100%
+	.box{
+		width: 98%;
+		margin-bottom: 2%;
 	}
 }
-
-/************* Tablet devices only *********/
-@media (min-width: 768px) and (max-width: 992px) {
-	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-		float: left;
-		border: 1px solid gray;
-		margin-right: 15px;
-		margin-bottom: 15px;
-
+@media  screen and (max-width: 991px) and (min-width:768px)  {
+	#chicken{
+		width: 48%;
 	}
-	.col-md-1 {
-		width: 8.33%;
+	#beef{
+		width: 48%;
 	}
-	.col-md-2 {
-		width: 16.66%;
-	}
-	.col-md-3 {
-		width: 25%;
-	}
-	.col-md-4 {
-		width: 33%;
-	}
-	.col-md-5 {
-		width: 41.66%;
-	}
-	.col-md-6 {
-		width: 50%;
-	}
-	.col-md-7 {
-		width: 58.33%;
-	}
-	.col-md-8 {
-		width: 66.66%;
-	}
-	.col-md-9 {
-		width: 74.99%;
-	}
-	.col-md-10 {
-		width: 83.33%;
-	}
-	.col-md-11 {
-		width: 91.66%;
-	}
-	.col-md-12 {
-		width: 100%;
-	}
-}
-
-/************* Mobile devices only *********/
-@media (max-width: 767px) {
-	.col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12 {
-		float: left;
-		border: 1px solid black;
-		margin-bottom: 15px;float: left;
-		border: 1px solid gray;
-		margin-bottom: 15px;
-	}
-	.col-s-1 {
-		width: 8.33%;
-	}
-	.col-s-2 {
-		width: 16.66%;
-	}
-	.col-s-3 {
-		width: 25%;
-	}
-	.col-s-4 {
-		width: 33%;
-	}
-	.col-s-5 {
-		width: 41.66%;
-	}
-	.col-s-6 {
-		width: 50%;
-	}
-	.col-s-7 {
-		width: 58.33%;
-	}
-	.col-s-8 {
-		width: 66.66%;
-	}
-	.col-s-9 {
-		width: 74.99%;
-	}
-	.col-s-10 {
-		width: 83.33%;
-	}
-	.col-s-11 {
-		width: 91.66%;
-	}
-	.col-s-12 {
-		width: 100%;
+	#sushi{
+		width: 98%;
+		margin-top: 1%;
 	}
 }
